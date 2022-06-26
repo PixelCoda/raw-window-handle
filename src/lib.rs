@@ -22,14 +22,14 @@
 #[cfg(feature = "alloc")]
 extern crate alloc;
 
-mod android;
-mod appkit;
-mod haiku;
-mod redox;
-mod uikit;
-mod unix;
-mod web;
-mod windows;
+pub mod android;
+pub mod appkit;
+pub mod haiku;
+pub mod redox;
+pub mod uikit;
+pub mod unix;
+pub mod web;
+pub mod windows;
 
 pub use android::AndroidNdkHandle;
 pub use appkit::AppKitHandle;
